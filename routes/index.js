@@ -12,6 +12,15 @@ router.get('/', (req, res, next) => {
 });
 
 /* GET New Message post */
-router.get('/new', (req, res, next) => {});
+router.get('/new', (req, res, next) => {
+  res.render('form', { title: 'Mini MessageBoard' });
+});
+
+router.post('/new', (req, res, next) => {
+  const { text, user } = req.body;
+  const message = { text, user, added: new Date() };
+  messages.push(message);
+  res.redirect('/');
+});
 
 module.exports = router;
