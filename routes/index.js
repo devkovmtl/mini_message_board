@@ -7,8 +7,11 @@ const messages = [
 ];
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
+router.get('/', (req, res, next) => {
   res.render('index', { title: 'Mini MessageBoard', messages });
 });
+
+/* GET New Message post */
+router.get('/new', (req, res, next) => {});
 
 module.exports = router;
