@@ -6,4 +6,8 @@ from The Odin's Project [curriculum](https://www.theodinproject.com/paths/full-s
 
 - [ExpressJS Generator](https://expressjs.com/fr/starter/generator.html)
 - [EJS](https://ejs.co/)
-- [Mongoose](https://mongoosejs.com/docs/guide.html)
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+
+## HOST ON HEROKU:
+
+- [heroku](https://devcenter.heroku.com/categories/nodejs-support)

@@ -18,6 +18,9 @@ router.get('/new', (req, res, next) => {
 
 router.post('/new', (req, res, next) => {
   const { text, user } = req.body;
+  if (!user.trim() || !text.trim()) {
+    return;
+  }
   const message = { text, user, added: new Date() };
   messages.push(message);
   res.redirect('/');
